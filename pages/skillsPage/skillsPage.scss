@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+
+}
+
+.navbar {
+    height: 10vh;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50px;
+    bottom: -13px;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+    padding: 0 30px;
+    padding-left: 0 !important;
+    position: absolute;
+    left: 200px;
+}
+
+.nav-item {
+    margin: 0 30px;
+}
+
+#mainDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 90vh;
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+    background-position: 50% 50%;
+}
+
+#mainDivInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: inherit;
+    padding: 0 10%;
+    margin-top: -4%;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: orangered;
+}
+
+h1 {
+    font-size: 77px;
+    margin: 7% 0;
+    font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 7%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#mainDivImageDiv {
+    width: 50%;
+    height: inherit;
+    background-image: url("https://cdn.picpng.com/thinking_man/thinking-man-transparent-33568.png");
+    background-position: right;
+    background-size: cover;
+}
+
+
+#skillsDiv {
+    display: none;
+    width: 100%;
+}
+
+#profileDiv {
+    width: 100%;
+    padding: 70px 5%;
+}
+
+#myMainInfoDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#aboutMeDiv,
+#roundPhotoDiv,
+#detailsDiv {
+    flex-basis: 100%;
+    padding: 0 50px;
+}
+
+#roundPhotoImageDiv {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+#roundPhotoDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.boldHeader{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.smallerBoldHeader{
+    font-weight: bold;
+    margin-bottom: 0.3rem !important;
+}
+.defaultText {
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+}
+
