@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+#mainInfoDiv {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+}
+#mainInfoDiv #mainInfoDiv {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#mainInfoDiv #mainInfoDiv img {
+  width: inherit;
+}
+#mainInfoDiv .container {
+  position: absolute !important;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  height: 90vh;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+#mainInfoDiv .container__image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: solid 10px black;
+  background-image: url(./common/photos/1.jpg);
+  background-size: cover;
+  transition: ease-in-out 0.3s;
+  z-index: 100;
+}
+#mainInfoDiv .container__image:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: inherit;
+  background-position: bottom;
+  filter: blur(40px) saturate(0%);
+  transform: scaleX(0.4);
+  transition: ease-in-out 0.4s;
+  border-radius: 120px;
+  transform-origin: right;
+  opacity: 0;
+  z-index: -1;
+}
+#mainInfoDiv .container__image:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: inherit;
+  background-position: left;
+  filter: blur(40px) saturate(0%);
+  transform: scaleX(0.4);
+  transition: ease-in-out 0.4s;
+  border-radius: 120px;
+  transform-origin: right;
+  opacity: 0;
+  z-index: -1;
+}
+#mainInfoDiv .container__image .container__info {
+  position: relative;
+  line-height: 1.8;
+  transition: ease-in-out 0.3s;
+  opacity: 0;
+}
+#mainInfoDiv .container__image .container__location {
+  transition-delay: 0.15s;
+}
+#mainInfoDiv .container__image:hover {
+  border-radius: 0;
+  width: 450px;
+  height: 350px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 2px 6px rgba(9, 55, 53, 0.11), 0px 16px 24px rgba(9, 55, 53, 0.15), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+#mainInfoDiv .container__image:hover:before {
+  width: 100%;
+  opacity: 0.18;
+  filter: blur(10px) saturate(100%);
+  transform: scale(2.8) translate3d(-18%, 0px, 0px);
+}
+#mainInfoDiv .container__image:hover:after {
+  width: 100%;
+  opacity: 0.05;
+  filter: blur(10px) saturate(100%);
+  transform: scale(2.8) translate3d(50%, 0px, 0px);
+}
+#mainInfoDiv .container__image:hover .container__info {
+  border-radius: 15px;
+  padding: 5px 30px;
+  margin-bottom: 10px;
+  width: 35vh;
+  background-color: white;
+  transform: translate3d(-80%, 0px, 0px);
+  opacity: 1;
+}
+
+.link {
+  border-bottom: 1px solid transparent;
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease-in 0.13s;
+}
+.link:hover {
+  border-radius: 7px;
+  background-color: green;
+  color: #ffffff;
+}
+
+.navbar {
+  height: 10vh;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+  height: 20px;
+  position: absolute;
+  bottom: 388px;
+  left: 45%;
+  font-size: 22px;
+}
+.arrow a {
+  color: black;
+  text-decoration: none !important;
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.navbar-brand {
+  position: absolute;
+  left: 50px;
+  bottom: -13px;
+}
+
+.navbar-nav {
+  flex-direction: row !important;
+  padding: 0 30px;
+  position: absolute;
+  left: 200px;
+}
+
+.nav-item {
+  margin: 0 30px;
+}/*# sourceMappingURL=index.css.map */
