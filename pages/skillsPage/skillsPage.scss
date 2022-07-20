@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@400&display=swap');
 
+$mainDivBackground : lightgrey;
 * {
     padding: 0;
     margin: 0;
@@ -89,6 +90,10 @@ h2 {
 
 #profileDiv {
     width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 70px 5%;
 }
 
@@ -106,38 +111,80 @@ h2 {
 }
 
 #roundPhotoImageDiv {
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 20vw;
     overflow: hidden;
     border-radius: 50%;
     object-fit: contain;
+    border: 6px solid orangered;
 }
 
 #roundPhotoDiv {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-top: 15px;
 }
 
-.header{
+.header {
     font-family: 'Abril Fatface', cursive;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 40px;
-    font-size: 30px;
+    margin-bottom: 5vh;
+    font-size: 3rem;
 }
 
-.boldHeader{
+.boldHeader {
     font-weight: bold;
     margin-bottom: 30px;
     font-size: 30px;
 }
 
-.smallerBoldHeader{
+.smallerBoldHeader {
     font-weight: bold;
     margin-bottom: 0.3rem !important;
 }
+
 .defaultText {
     font-family: 'Roboto', sans-serif;
     line-height: 30px;
 }
 
+#myJobDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 70px 5%;
+    background-color: $mainDivBackground;
+}
+
+#myFunctionsDiv {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 25px;
+}
+
+.myFunctionDiv {
+    display: flex;
+    padding: 50px 20px;
+    width: 33.33%;
+    flex-direction: row;
+}
+
+.iconCircleDiv {
+    margin-right: 20px;
+}
+
+.iconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    border-radius: 50%;
+}
